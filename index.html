@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>骑自行车的鹈鹕</title>
+<style>
+  :root {
+    color-scheme: light;
+    --ink: #1f2a33;
+    --muted: #5d6b78;
+    --card: #ffffff;
+    --line: #dfe7ee;
+    --accent: #12a5ab;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 18px;
+    background: linear-gradient(180deg, #eaf6ff 0%, #f6fbff 55%, #eef7f0 100%);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    width: min(880px, 100%);
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 26px 26px 22px;
+    box-shadow: 0 18px 48px rgba(31, 42, 51, 0.12);
+    text-align: center;
+  }
+  h1 {
+    margin: 0 0 6px;
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
+    letter-spacing: 0.04em;
+  }
+  .lead {
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  figure {
+    margin: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #dff0fc;
+    border: 1px solid var(--line);
+  }
+  figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .actions a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  .actions a:hover,
+  .actions a:focus-visible {
+    background: var(--accent);
+    color: #fff;
+  }
+  footer {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1>骑自行车的鹈鹕</h1>
+    <p class="lead">纯手写矢量插画，内联 SMIL 动画，无脚本、无位图、无外部依赖。</p>
+
+    <figure>
+      <img src="pelican-bicycle.svg" alt="一只白色鹈鹕骑着青色自行车，在浅蓝天空与公路上前行" width="800" height="600">
+    </figure>
+
+    <div class="actions">
+      <a href="pelican-bicycle.svg" target="_blank" rel="noopener">查看 SVG</a>
+      <a href="pelican-bicycle.svg" download="pelican-bicycle.svg">下载 SVG</a>
+    </div>
+
+    <footer>车轮与脚踏曲柄旋转、鹈鹕随行起伏、翅膀小幅扇动，周期均为 1.5 秒线性循环。</footer>
+  </main>
+</body>
+</html>
